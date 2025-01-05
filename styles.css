@@ -3,9 +3,11 @@ body {
     margin: 0px;
     background-color: green;
 }
+/* Общие стили */
 * *::after *::before {
     box-sizing: border-box;
 }
+/* Стиль хедера */
 header {
     width: 1366px;
     height: 150px;
@@ -13,7 +15,7 @@ header {
     margin: 0 auto;
     display: flex;
 }
-
+/* Стиль лого в хедере */
 header .logo {
     width: 287px;
     height: 34;
