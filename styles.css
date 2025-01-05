@@ -1,7 +1,8 @@
 body {
-    box-sizing: border-box;
-    margin: 0px;
     background-color: green;
+    margin: 0; /* Убираем отступы от всего документа */
+    display: flex;
+    justify-content: center; /* Центрируем блок header по горизонтали */
 }
 /* Общие стили */
 * *::after *::before {
@@ -10,15 +11,54 @@ body {
 /* Стиль хедера */
 header {
     width: 1366px;
-    height: 150px;
+    height: 151px;
     background-color: white;
-    margin: 0 auto;
-    display: flex;
+    position: relative; /* Для позиционирования внутренних элементов */
+    display: flex; /* Используем Flexbox для центровки содержимого */
+    align-items: center; /* Выравниваем содержимое по вертикали */
 }
 /* Стиль лого в хедере */
 header .logo {
     width: 287px;
     height: 34;
-    position: relative;
+    position: absolute;
+    top: 50%;
     left: 37px;
+    transform: translateY(-50%);
+}
+/* Стиль номера телефона в хедере */
+header .phone_number {
+    width: 235px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 402px;
+    transform: translateY(-50%);
+}
+/* Стиль корзины в хедере */
+header .basket_header {
+    width: 82px;
+    height: 88px;
+    position: absolute;
+    top: 50%;
+    left: 717px;
+    transform: translateY(-50%);
+}
+/* Стиль адреса в хедере */
+header .adress {
+    width: 357px;
+    height: 56px;
+    position: absolute;
+    top: 50%;
+    left: 859px;
+    transform: translateY(-50%);
+}
+/* Стиль входа в хедере */
+header .login {
+    width: 72px;
+    height: 91px;
+    position: absolute;
+    top: 50%;
+    left: 1250px;
+    transform: translateY(-50%); 
 }
