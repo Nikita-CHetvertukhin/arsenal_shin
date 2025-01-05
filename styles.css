@@ -1,0 +1,22 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    background-color: green;
+}
+* *::after *::before {
+    box-sizing: border-box;
+}
+header {
+    width: 1366px;
+    height: 150px;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+}
+
+header .logo {
+    width: 287px;
+    height: 34;
+    position: relative;
+    left: 37px;
+}
