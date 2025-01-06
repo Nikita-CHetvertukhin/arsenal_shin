@@ -57,8 +57,9 @@ header .adress {
     width: 357px;
     height: 56px;
     position: absolute;
-    top: 65px;
+    top: 50%;
     left: 859px;
+    transform: translateY(-50%);
 }
 /* Стиль входа в хедере */
 header .login {
