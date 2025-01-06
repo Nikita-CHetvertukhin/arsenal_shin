@@ -8,8 +8,8 @@ body {
 * *::after *::before {
     box-sizing: border-box;
 }
-/* Стиль хедера */
-header {
+/* Стиль верхней части хедера */
+header .header-top {
     width: 1366px;
     height: 151px;
     background-color: white;
@@ -62,3 +62,47 @@ header .login {
     left: 1250px;
     transform: translateY(-50%); 
 }
+/* Стиль нижней части хедера */
+header .header-bottom {
+    width: 1366px;
+    height: 80px;
+    background-color: #373334;
+    top: 151px;
+    position: relative; /* Для позиционирования внутренних элементов */
+    display: flex; /* Используем Flexbox для центровки содержимого */
+    align-items: center; /* Выравниваем содержимое по вертикали */
+    margin: -71px 0 0 0; /* Убираем лишнее пространство */
+}
+
+    /*Начало Стиля поиска */
+header .search-container { 
+    position: relative;
+    display: flex; 
+    padding: 20px; 
+    left: 973px;
+} 
+header .search-box-wrapper { 
+    position: relative; /* Для абсолютного позиционирования внутренностей */ 
+    width: 312px; /* Ширина поля ввода */
+    height: 43px;
+ }
+header .search-box { 
+    width: 100%; /* Заполняет всю ширину контейнера */
+    padding: 10px 2px 10px 10px; /* Добавляем отступ справа для кнопки */ 
+    font-size: 16px;
+} 
+header .search-button { 
+    position: absolute; 
+    right: 2px; /* Отступ от правого края */ 
+    top: 50%; 
+    transform: translateY(-50%); /* Вертикально центрируем кнопку */ 
+    background: none; /* Убираем фон */ 
+    border: none; /* Убираем границу */ 
+    cursor: pointer; 
+    padding: 0; /* Убираем padding */
+}
+header .search-button img { 
+    width: 27px; /* Устанавливаем ширину изображения */ 
+    height: 27px; /* Устанавливаем высоту изображения */ 
+}
+/*Конец Стиля поиска */
