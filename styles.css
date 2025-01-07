@@ -1,29 +1,34 @@
+/* Общие стили */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+/*Тело сайта*/
 html, body {
     background-color: rgb(255, 255, 255);
     box-sizing: border-box;
     color: rgb(33, 37, 41);
     display: block;
-    height: 2130.54px;
     line-height: 24px;
     margin: 0; padding: 0; width: 100%; height: 100%;
     display: flex;
-    justify-content: center; /* Горизонтальное центрирование */
+    flex-direction: column;
+    align-items: center;
     text-size-adjust: 100%;
-    width: 1700px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-/* Общие стили */
-*, *::after, *::before {
-    box-sizing: border-box;
-}
+/* Начало стилей хедера */
+header {
+    width: 1366px;
+    height: 231px;
+} 
 /* Стиль верхней части хедера */
 header .header-top {
     width: 1366px;
     height: 151px;
     background-color: white;
-    position: relative; /* Для позиционирования внутренних элементов */
-    display: flex; /* Используем Flexbox для центровки содержимого */
-    align-items: center; /* Выравниваем содержимое по вертикали */
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 /* Стиль лого в хедере */
 header .logo {
@@ -45,13 +50,25 @@ header .phone_number {
 }
 /* Стиль корзины в хедере */
 header .basket_header {
-    width: 82px;
-    height: 88px;
+    width: 93px;
+    height: 100px;
     position: absolute;
     top: 50%;
     left: 717px;
     transform: translateY(-50%);
+    background-color: transparent;
+    transition: background-color 0.3s ease;
 }
+/* Стиль картинки корзины */
+header .basket_header img {
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+/* Анимация затемнени при наведении корзины */
+header .basket_header:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 /* Стиль адреса в хедере */
 header .adress {
     width: 357px;
@@ -63,65 +80,169 @@ header .adress {
 }
 /* Стиль входа в хедере */
 header .login {
-    width: 72px;
-    height: 91px;
+    width: 90px;
+    height: 100px;
     position: absolute;
     top: 50%;
-    left: 1250px;
+    left: 1235px;
     transform: translateY(-50%); 
 }
+/* Стиль изображения Войти */
+header .login img{
+    position: relative;
+    left: 10px;
+    top: 6px;
+}
+/* Затемнение фона изображения войти */
+header .login:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 /* Стиль нижней части хедера */
 header .header-bottom {
     width: 1366px;
     height: 80px;
     background-color: #373334;
-    top: 151px;
-    position: relative; /* Для позиционирования внутренних элементов */
-    display: flex; /* Используем Flexbox для центровки содержимого */
-    align-items: center; /* Выравниваем содержимое по вертикали */
-    margin: -71px 0 0 0; /* Убираем лишнее пространство */
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 /* Стиль кнопок в нижнем хедере */
 header .menu-bottom a{
-    color: white; /* Устанавливаем белый цвет текста */
-    text-decoration: none; /* Убираем подчеркивание */
-    font-size: 24px; /* Увеличиваем размер шрифта */
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
     font-family: "Roboto", serif;
     font-weight: bold;
     font-style: normal;
-    -webkit-text-stroke: 2px white; /* Обводка белого цвета */
-    margin: 0px 37px; /* Отступы между ссылками */
-    letter-spacing: 2px; /* Устанавливаем интервал между буквами */
+    -webkit-text-stroke: 2px white;
+    letter-spacing: 2px;
+    padding: 23px 37px 28px 37px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    margin: 0px 0px;
 }
+/* Анимация затемнения кнопок в нижнем хедере */
+header .menu-bottom a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
     /*Начало Стиля поиска */
 header .search-container { 
     position: absolute;
     display: flex; 
     padding: 20px; 
-    left: 973px;
+    left: 968px;
 } 
+/* Поле ввода*/
 header .search-box-wrapper { 
-    position: relative; /* Для абсолютного позиционирования внутренностей */ 
-    width: 329px; /* Ширина поля ввода */
+    position: relative;
+    width: 329px;
     height: 43px;
  }
+ /* Ввод в поиск */
 header .search-box { 
-    width: 100%; /* Заполняет всю ширину контейнера */
-    padding: 10px 2px 10px 10px; /* Добавляем отступ справа для кнопки */ 
+    width: 100%;
+    padding: 10px 2px 10px 10px;
     font-size: 16px;
 } 
+/* Изображение лупы в поиске */
 header .search-button { 
     position: absolute; 
-    right: 23px; /* Отступ от правого края */ 
+    right: 23px;
     top: 50%; 
-    transform: translateY(-50%); /* Вертикально центрируем кнопку */ 
-    background: none; /* Убираем фон */ 
-    border: none; /* Убираем границу */ 
+    transform: translateY(-50%);
+    background: none;
+    border: none;
     cursor: pointer; 
-    padding: 0; /* Убираем padding */
+    padding: 0;
 }
+/* Само изображение */
 header .search-button img { 
-    width: 27px; /* Устанавливаем ширину изображения */ 
-    height: 27px; /* Устанавливаем высоту изображения */ 
+    width: 27px;
+    height: 27px;
 }
-/*Конец Стиля поиска */
+/* Начало витрины */
+.vitrin {
+    background-image: url('img/vitrin_background.svg');
+    width: 1366px;
+    height: 537px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px 143px;
+}
+/* Ячейка витрины */
+.vitrin-cell {
+    position: relative;
+    display: flex;
+    transition: transform 0.3s ease, flex 0.3s ease;
+}
+/* Увеличиваем область при наведении */
+.vitrin-cell:hover {
+    transform: scale(1.15);
+    z-index: 1;
+    transform-origin: bottom center;
+}
+/* Уменьшаем остальные области только при наведении на другую */
+.vitrin:hover .vitrin-cell:not(:hover) {
+    transform: scale(0.85);
+    opacity: 0.9;
+    transform-origin: bottom center;
+}
+/* Картинки шин в витрине */
+.vitrin-cell-wheel {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* Белый текст в витрине */
+.white-title {
+    color: white;
+    font-size: 46px;
+    font-family: "Russo One", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    position: absolute;
+    transform: translate(20px, 40px)
+}
+/* Синий текст в витрине */
+.blue-title {
+    color: #00AFEF;
+    font-size: 46px;
+    font-family: "Russo One", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    position: absolute;
+    transform: translate(20px, 112px)
+}
+/* Синяя текст просмотра всего */
+.blue-text-button {
+    color: #00AFEF;
+    font-size: 14px;
+    font-family: "Russo One", serif;
+    font-style: normal;
+    position: absolute;
+    transform: translate(13px, 27px);
+    border-radius: 5px;
+    transition: text-shadow 0.5s ease, color 0.5s ease;
+}
+/* Кнопка просмотра всего */
+.read-all-button {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    transform-origin: right center;
+    transition: transform 0.5s ease;
+}
+/* Увеличение кнопка просмотра всего */
+.read-all-button:hover {
+    transform: scale(1.1);
+}
+/* Подсветка синего текста на кнопке */
+.read-all-button:hover .blue-text-button {
+    text-shadow: 0 0 5px #00AFEF, 0 0 10px #00AFEF, 0 0 15px #00AFEF;
+    color: #2DC3F9;
+}
