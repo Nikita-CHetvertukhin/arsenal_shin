@@ -247,26 +247,135 @@ header .search-button img {
     text-shadow: 0 0 5px #00AFEF, 0 0 10px #00AFEF, 0 0 15px #00AFEF;
     color: #2DC3F9;
 }
+/* общий стиль коллекции */
 .collection {
     width: 1366px;
     height: 1536px;
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #373334;
+     background-color: #373334;
 }
+/* Стиль верхней части коллекции */
 .collection-top {
     width: 1366px;
     height: 200px;
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0px 70px;
+    align-items: center;
 }
+/* Общий стиль основной части коллекции */
 .collection-bottom {
     width: 1366px;
     height: 1336px;
     position: relative;
     display: flex;
+    flex-flow: row wrap;
+    gap: 0px 88px;
+    padding: 0px 70px;
+    top: 20px;
+}
+/* Общий стиль позиции основной части коллекции */
+.table-position {
+    width: 350px;
+    height: 577px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+/* Стиль фото + статусов позиции */
+.table-position img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* Стиль текстового описания позиции */
+.description-position {
+    position: absolute;
+    display: flex;
+    top: 370px;
+    left: 40px;
+}
+/* СТиль белого шрифта */
+.regular-bold-white {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Russo One", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin: 0;
+}
+/* СТиль строки с ценой и оценкой */
+.summary-position {
+    position: absolute;
+    display: flex;
+    padding: 0px 40px;
+    top: 440px;
+    justify-content: space-between;
+    width: 350px;
+    bottom: 118px;
+}
+/* Стиль шкалы оценки */
+.rate {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 120px;
+    gap: 1px;
+    justify-content: space-between;
+}
+/* Стиль звезд оценки */
+.rate img {
+    position: relative;
+    width: 20px;
+    height: auto;
+}
+/* Стиль нижних кнопок позиции */
+.action-position {
+    position: absolute;
+    display: flex;
+    padding: 0px 40px;
+    top: 480px;
+    justify-content: space-between;
+    width: 350px;
+    height: 75px;
+    bottom: 0px;
+}
+/* Стиль изображений нижний кнопок */
+.action-position img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/* Стиль ссылки кнопок все о ней */
+.block-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+/* Стиль текста кнопки все о ней */
+.regular-bold-white-in-block {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Russo One", serif;
+    font-style: normal;
+    position: absolute; /* Для размещения поверх картинки */
+    left: 35px;
+    top: 26px;
+}
+/* Синий блок кнопки все о ней */
+.blue-block {
+    display: flex; /* Убирает нижний отступ изображения */
+}
+/* Стиль шрфита кнопки все о ней */
+.blue-block .regular-bold-white-in-block {
+    white-space: nowrap;
 }
