@@ -379,6 +379,7 @@ header .search-button img {
 .blue-block .regular-bold-white-in-block {
     white-space: nowrap;
 }
+/* Общий стиль сервиса */
 .service {
     background-image: url('img/service.svg');
     width: 1366px;
@@ -388,18 +389,20 @@ header .search-button img {
     flex-direction: column;
     padding: 0px 70px;
 }
+/* Стиль заголовка сервиса */
 .title-service {
     position: relative;
     display: flex;
     justify-content: flex-start;
     width: 1220px;
     height: 80px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     top: 70px;
     padding: 0px 30px;
     margin: 0px;
     align-items: center;
 }
+/* синий текст заголовка */
 .blue-revice-title {
     color: #00AFEF;
     font-size: 46px;
@@ -410,6 +413,7 @@ header .search-button img {
     padding: 0;
     margin: 0;
 }
+/* Белый текст заголовка */
 .white-revice-title {
     color: white;
     font-size: 46px;
@@ -421,6 +425,7 @@ header .search-button img {
     padding: 0;
     margin: 0;
 }
+/* Контейнер услуг */
 .service-wrapper {
     position: absolute;
     display: flex;
@@ -429,15 +434,17 @@ header .search-button img {
     top: 150px;
     width: 1220px;
     height: 530px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 0px 30px;
 }
+/* Оболочка услуги */
 .service-position {
     width: 580px;
     height: 230px;
     display: flex;
     position: relative;
 }
+/* Изображение */
 .service-position img {
     position: relative;
     display: flex;
@@ -445,6 +452,7 @@ header .search-button img {
     width: 200px;
     height: 200px;
 }
+/* Контейнер описания */
 .service-description {
     width: 380px;
     height: 230px;
@@ -456,14 +464,15 @@ header .search-button img {
     padding: 0px 15px 0px 30px;
     margin: 0px;
 }
+/* заголовок услуги */
 .service-position-title {
     color: white;
     font-size: 20px;
-    text-shadow: 
-        -0.5px -0.5px 0 black, /* Слева сверху */
-        0.5px -0.5px 0 black,  /* Справа сверху */
-        -0.5px 0.5px 0 black,  /* Слева снизу */
-        0.5px 0.5px 0 black;   /* Справа снизу */
+    /* text-shadow: 
+        -0.5px -0.5px 0 black,
+        0.5px -0.5px 0 black,
+        -0.5px 0.5px 0 black,
+        0.5px 0.5px 0 black;   */
     font-family: "Roboto", serif;
     font-style: normal;
     position: relative;
@@ -473,6 +482,7 @@ header .search-button img {
     top: 5px;
     width: 100%;
 }
+/* Описание услуги */
 .service-position-regular {
     word-wrap: break-word;
     white-space: normal;
@@ -483,10 +493,53 @@ header .search-button img {
     margin: 0;
     color: white;
     font-size: 20px;
-    text-shadow: 
-        -0.5px -0.5px 0 black, /* Слева сверху */
-        0.5px -0.5px 0 black,  /* Справа сверху */
-        -0.5px 0.5px 0 black,  /* Слева снизу */
-        0.5px 0.5px 0 black;   /* Справа снизу */
+    /* text-shadow: 
+        -0.5px -0.5px 0 black,
+        0.5px -0.5px 0 black,
+        -0.5px 0.5px 0 black,
+        0.5px 0.5px 0 black;   */
     width: 100%;
+}
+/* Стиль футера */
+footer {
+    width: 1366px;
+    height: 430px;
+    background-color: #373334;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 70px 0px 70px ;
+}
+/* стиль ссылок футера */
+.footer-container a {
+    text-decoration: none;
+}
+/* синий текст футера */
+.footer-blue-title {
+    color: #00AFEF;
+    font-size: 36px;
+    font-family: "Russo One", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    position: relative;
+    margin: 0;
+    padding: 0px 0px 45px 0px;
+}
+/* белый текст футера */
+.footer-white-title {
+    color: white;
+    font-size: 20px;
+    font-family: "Russo One", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    position: relative;
+    margin: 0;
+    padding: 0px 0px 24px 0px;
+}
+/* столбец футера */
+.footer-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
 }
