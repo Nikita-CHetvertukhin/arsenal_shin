@@ -379,3 +379,114 @@ header .search-button img {
 .blue-block .regular-bold-white-in-block {
     white-space: nowrap;
 }
+.service {
+    background-image: url('img/service.svg');
+    width: 1366px;
+    height: 767px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 70px;
+}
+.title-service {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 1220px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.1);
+    top: 70px;
+    padding: 0px 30px;
+    margin: 0px;
+    align-items: center;
+}
+.blue-revice-title {
+    color: #00AFEF;
+    font-size: 46px;
+    font-family: "Russo One", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+.white-revice-title {
+    color: white;
+    font-size: 46px;
+    font-family: "Russo One", serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 155px;
+    padding: 0;
+    margin: 0;
+}
+.service-wrapper {
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0px 0px;
+    top: 150px;
+    width: 1220px;
+    height: 530px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0px 30px;
+}
+.service-position {
+    width: 580px;
+    height: 230px;
+    display: flex;
+    position: relative;
+}
+.service-position img {
+    position: relative;
+    display: flex;
+    top: 15px;
+    width: 200px;
+    height: 200px;
+}
+.service-description {
+    width: 380px;
+    height: 230px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+    padding: 0px 15px 0px 30px;
+    margin: 0px;
+}
+.service-position-title {
+    color: white;
+    font-size: 20px;
+    text-shadow: 
+        -0.5px -0.5px 0 black, /* Слева сверху */
+        0.5px -0.5px 0 black,  /* Справа сверху */
+        -0.5px 0.5px 0 black,  /* Слева снизу */
+        0.5px 0.5px 0 black;   /* Справа снизу */
+    font-family: "Roboto", serif;
+    font-style: normal;
+    position: relative;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
+    top: 5px;
+    width: 100%;
+}
+.service-position-regular {
+    word-wrap: break-word;
+    white-space: normal;
+    font-family: "Roboto", serif;
+    font-style: normal;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    text-shadow: 
+        -0.5px -0.5px 0 black, /* Слева сверху */
+        0.5px -0.5px 0 black,  /* Справа сверху */
+        -0.5px 0.5px 0 black,  /* Слева снизу */
+        0.5px 0.5px 0 black;   /* Справа снизу */
+    width: 100%;
+}
